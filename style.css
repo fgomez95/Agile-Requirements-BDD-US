@@ -1,9 +1,9 @@
-#navigation {
+#navbar {
     position: fixed;
     padding: 0;
     margin: 0;
 }
-#navigation ul {
+#navbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@
     height: 100vh;
 }
 
-#navigation li {
+#navbar li {
     padding: 0;
     margin: 0;
     box-sizing: border-box;

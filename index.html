@@ -12,26 +12,53 @@
 </head>
 
 <body class="bg-light">
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <main class="container-fluid" id="main-doc">
         <div class="row">
             <div class="col-3 vh-100 p-0">
-                <nav id="navigation" class="col-3">
+                <nav id="navbar" class="col-3 bg-dark">
                     <ul>
                         <li id="page-title">
-                            Requirements: BDD and User Stories
+                            <header>
+                                <h5 class="text-light font-weight-bold">
+                                    Requirements: BDD and User Stories
+                                </h5>
+                            </header>
                         </li>
                         <li>
-                            Introduction
+                            <a href="#Introduction" class="nav-link text-light">
+                                Introduction
+                            </a>
                         </li>
                         <li>
-                            BDD & User Stories
+                            <a href="#BDD_&_User_Stories" class="nav-link text-light">
+                                BDD & User Stories
+                            </a>
                         </li>
                         <li>
-                            Points, Velocity, and Pivotal Tracker
+                            <a href="#Points_Velocity_and_Pivotal_Tracker" class="nav-link text-light">
+                                Points Velocity and Pivotal Tracker
+                            </a>
                         </li>
                         <li>
-                            SMART User Stories
+                            <a href="#SMART_User_Stories" class="nav-link text-light">
+                                SMART User Stories
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Lo-Fi_User_Interface_Sketches_and_Storyboards" class="nav-link text-light">
+                                Lo-Fi User Interface Sketches and Storyboards
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Agile_Cost_Estimation" class="nav-link text-light">
+                                Agile Cost Estimation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Examples" class="nav-link text-light">
+                                Examples
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -39,20 +66,22 @@
             <div class="col-9 bg-light p-0 m-0">
                 <div class="container-fluid">
                     <!-- Introduction -->
-                    <div class="row">
-                        <div class="col">
+                    <section class="row main-section" id="Introduction">
+                        <header class="col-12">
                             <h2>
                                 Introduction
                             </h2>
+                        </header>
+                        <div class="col">
                             <div class="d-flex">
                                 <div>
-                                    <img src="http://via.placeholder.com/200x300" alt="tdd diagram" height="200px">
+                                    <img src="agile-pm.png" alt="tdd diagram" height="350px" class="p-3">
                                 </div>
 
                                 <div>
                                     <p>
-                                        The Agile approach to project management attacks most of the common issues among
-                                        software development methodologies by enhacing communication with the
+                                        Agile approaches project management most of the common issues among
+                                        software development methodologies by enhancing communication with the
                                         stakeholders, and concentrating efforts on the application's behavior instead of
                                         implementation.
                                     </p>
@@ -67,12 +96,13 @@
                                         <li>
                                             User stories: to elicit functional requirements.
                                         </li>
-                                        <li>Low-fidelity (Lo-Fi) user interfaces and storyboards to elicit UI
-                                            requirements.</li>
+                                        <li>
+                                            Low-fidelity (Lo-Fi) user interfaces and storyboards to elicit UI
+                                            requirements.
+                                        </li>
                                         <li>
                                             Points: to turn user stories into cost estimates.
                                         </li>
-
                                         <li>
                                             Velocity: to measure ad estimate schedule.
                                         </li>
@@ -83,29 +113,33 @@
                                             Using Pivotal Tracker to track project progress, to calculate velocity, and
                                             to estimate time to milestones.
                                         </li>
-
                                     </ul>
                                 </div>
                             </div>
+                            <a href="http://www.saasbook.info/" target="_blank" rel="noopener noreferrer">
+                                Book Source
+                            </a>
                         </div>
-                    </div>
+                    </section>
                     <hr>
                     <!--BDD and User stories-->
-                    <div class="row">
-                        <div class="col">
+                    <section class="row main-section" id="BDD_&_User_Stories">
+                        <header class="col-12">
                             <h2>
                                 BDD & User Stories
                             </h2>
+                        </header>
+                        <div class="col">
                             <p>
                                 Behavior-Driven Design asks questions about the behavior of an application before and
-                                during development so that the stakeholders are less likely to miscommunicate.
+                                during development so that the stakeholders are less likely miscommunication.
                                 Requirements are written down continuously refined to ensure the resulting software
-                                meets hte stakeholder's desires.
+                                meets the stakeholder's desires.
                             </p>
 
                             <p>
-                                The agile version of requirements is user stories, which describe how the application is
-                                expeted to be used.
+                                The User Stories are used as requirements to describe how the application is
+                                expected to be used.
                             </p>
 
                             <p>
@@ -115,13 +149,12 @@
                             </p>
 
                             <p>
-                                Combined working closely with the stakeholders and concentrating on the the
-                                application's behavior rather than the implementation, makes easier to spot
-                                missunderstandings.
+                                Spot misunderstandings is easier by combining working closely with the stakeholders and
+                                concentrating on the application's behavior rather than the implementation.
                             </p>
 
                             <p>
-                                Example of a User Storie (It can be written in a 3x5 inch paper card):
+                                Example of a User Story (It can be written in a 3x5 inch paper card):
                             </p>
                             <div>
                                 <small><b>story1.feature</b></small>
@@ -144,14 +177,16 @@ Feature: Add a book to AwesomeBooks
                                 </pre>
                             </div>
                         </div>
-                    </div>
+                    </section>
                     <hr>
                     <!--Points Velocity and Pivotal Tracker-->
-                    <div class="row">
-                        <div class="col">
+                    <section class="row main-section" id="Points_Velocity_and_Pivotal_Tracker">
+                        <header class="col-12">
                             <h2>
                                 Points Velocity and Pivotal Tracker
                             </h2>
+                        </header>
+                        <div class="col">
                             <div>
                                 <p>
                                     The solution to calculate a team's productivity is to rate the stories in advance
@@ -161,10 +196,9 @@ Feature: Add a book to AwesomeBooks
                                 </p>
 
                                 <ul>
-                                    <li>1. For straightforward stories.</li>
-                                    <li>2. For medium stories.</li>
-                                    <li>3. For very complex stories.</li>
-
+                                    <li>1pts. For straightforward stories.</li>
+                                    <li>2pts. For medium stories.</li>
+                                    <li>3pts. For very complex stories.</li>
                                 </ul>
 
 
@@ -174,36 +208,40 @@ Feature: Add a book to AwesomeBooks
                                 </p>
 
                                 <p>
-                                    The purpose of velicity is to provide the stakeholders an estimation of how long it
+                                    The purpose of velocity is to provide the stakeholders an estimation of how long it
                                     will take to integrate the desired features.
                                 </p>
 
                                 <p>
                                     User stories should not be complex that there is no clear way to approach them. If
-                                    so, you should go back and evaluate with stakeholders if user storie refactor is
+                                    so, you should go back and evaluate with stakeholders if user story refactor is
                                     needed.
                                 </p>
                                 <p>
                                     Selected Tool: <b>Pivotal Tracker</b>
                                 </p>
-
                             </div>
                         </div>
-                    </div>
+                    </section>
                     <hr>
                     <!-- SMART User Stories -->
-                    <div>
-                        <h2>SMART User Stories</h2>
-                        <div>
-                            SMART provides a helpful acronym to write good user stories.
-                            <p>
-                                <b>Specific:</b><br>
-                                <code>Feature:</code> User can search for a movie (vague) <br>
-                                <code>Feature:</code> User can search for a movie by title (specific)
-                            </p>
-                            <p>
-                                <b>Measurable:</b><br>
-                                <pre>
+                    <section class="row main-section" id="SMART_User_Stories">
+                        <header class="col-12">
+                            <h2>
+                                SMART User Stories
+                            </h2>
+                        </header>
+                        <div class="col">
+                            <div>
+                                SMART provides a helpful acronym to write good user stories.
+                                <p>
+                                    <b>Specific:</b><br>
+                                    <code>Feature:</code> User can search for a movie (vague) <br>
+                                    <code>Feature:</code> User can search for a movie by title (specific)
+                                </p>
+                                <p>
+                                    <b>Measurable:</b><br>
+                                    <pre>
 <code>
 Feature:  RottenPotatoes should have good response time (unmeasurable)
 </code>
@@ -211,47 +249,201 @@ Feature:  RottenPotatoes should have good response time (unmeasurable)
 Feature:  When adding a movie, 99% of Add Movie pages 
           should appear within 3 seconds (measurable)
 </code>
-                                </pre>
-                            </p>
-                            <p>
-                                <b> Achievable:</b><br>
-                                <p>
-                                    Ideally, you should be able to implement the user story in one iteration.
+                                    </pre>
                                 </p>
-                            </p>
-                            <p>
-                                <b>Relevant:</b><br>
                                 <p>
-                                    It should add business value to one or more stakeholders. to drill down to real
-                                    business value, you can keep asking "Why". take the example of adding a Facebook
-                                    linking feature.
-                                    <br>
-                                    1. Why add the Facebook feature? As box office manager, I think more people will go
-                                    with friends and enjoy the show more.
-                                    <br>
-                                    2. Why does it matter if they ejoy the show more? I think we will sell more tickets.
-                                    <br>
-                                    3. Why do you want to sell more tickets? Because then the theater makes more money.
-                                    <br>
-                                    4. Why does theater want to make more money? We want to make more money so that we
-                                    don't go out of buiness.
-                                    <br>
-                                    5. Why does it matter that theater is in business next year? If not, I have no job.
+                                    <b> Achievable:</b><br>
+                                    <p>
+                                        Ideally, you should be able to implement the user story in one iteration.
+                                    </p>
                                 </p>
-                            </p>
-                            <p>
-                                <b>Timeboxed:</b><br>
                                 <p>
-                                    In agile software development, a timebox is a defined period of time during which a
-                                    task must be accomplished. Timeboxes are commonly used to manage software
-                                    development risk. Development teams are repeatedly tasked with producing a
-                                    releasable improvement to software, timeboxed to a specific number of weeks.
+                                    <b>Relevant:</b><br>
+                                    <p>
+                                        It should add business value to one or more stakeholders. To drill down to real
+                                        business value, you can keep asking "Why". Take the example of adding a Facebook
+                                        linking feature.
+                                        <br>
+                                        1. Why add the Facebook feature? As box office manager, I think more people will
+                                        go
+                                        with friends and enjoy the show more.
+                                        <br>
+                                        2. Why does it matter if they enjoy the show more? I think we will sell more
+                                        tickets.
+                                        <br>
+                                        3. Why do you want to sell more tickets? Because then the theater makes more
+                                        money.
+                                        <br>
+                                        4. Why does theater want to make more money? We want to make more money so that
+                                        we don't go out of business.
+                                        <br>
+                                        5. Why does it matter that theater is in business next year? If not, I have no
+                                        job.
+                                    </p>
                                 </p>
+                                <p>
+                                    <b>Timeboxed:</b><br>
+                                    <p>
+                                        In agile software development, a timebox is a defined period of time during
+                                        which a
+                                        task must be accomplished. Timeboxes are commonly used to manage software
+                                        development risk. Development teams are repeatedly tasked with producing a
+                                        releasable improvement to software, timeboxed to a specific number of weeks.
+                                    </p>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <!-- Lo-Fi User Interface Sketches and Storyboards -->
+
+                    <section class="row main-section" id="Lo-Fi_User_Interface_Sketches_and_Storyboards">
+                        <header class="col-12">
+                            <h2>
+                                Lo-Fi User Interface Sketches and Storyboards
+                            </h2>
+                        </header>
+                        <div class="col">
+                            <div class="d-flex">
+                                <div class="col-4">
+                                    <img src="lo-fi-ui.png" height="350px">
+                                </div>
+                                <div class="col-8">
+                                    <p>
+                                        These 3x5 card mockups are meant to engage the stakeholders and encouraging
+                                        trial and error by creating a simple interface to describe how the application
+                                        will be structured like.
+                                    </p>
+                                    <p>
+                                        Lo-Fi sketches show what the UI looks like at one instant in time. However, we
+                                        need to also provide a clear way to understand the interaction between the user
+                                        and the app. This is when storyboarding comes handy, as it shows how the
+                                        sketches work together typically represented by a tree or graph.
+                                    </p>
+                                    <p>
+                                        To make a story board, you must think about all the user interaction with a web
+                                        app:
+                                    </p>
+                                    <ul>
+                                        <li>Pages or sections of pages</li>
+                                        <li>Form and buttons</li>
+                                        <li>Pop ups</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <hr>
+                    <!-- Agile Cost Estimation -->
+                    <section class="row main-section" id="Agile_Cost_Estimation">
+                        <header class="col-12">
+                            <h2>
+                                Agile Cost Estimation
+                            </h2>
+                        </header>
+                        <div class="col">
+                            <p>
+                                Agile Cost Estimation
+                                Following the Agile Manifesto's emphasis on customer cooperation over contracts, an
+                                Agile team's notion of "cost estimation" is therefore more about advising the client on
+                                what team size can provide the maximum efficiency, following Brook's Law that there is a
+                                point of diminishing returns on team size. The Agile team's goal in the scoping process
+                                is to identify that point, then ramp the team up to that size over time. Agile companies
+                                bid costs for time and materials based on short discussions with external customers.
                             </p>
                         </div>
-                    </div>
+                        <hr>
+                    </section>
                     <hr>
-                    <!-- Next -->
+                    <!-- next-->
+                    <section class="row main-section" id="Examples">
+                        <header class="col-12">
+                            <h2>
+                                Examples
+                            </h2>
+                        </header>
+                        <div class="col">
+                            <div>
+                                <h4>
+                                    User Story in Cucumber
+                                </h4>
+                                <pre>
+                                    <code>
+Feature: User can add movie by searching for it in The Movie Database (TMDb)
+
+    As a movie fan
+    So that I can add new movies without manual tedium
+    I want to add movies by looking up their details in TMDb
+
+Background: Start from the Search form on the home page
+
+    Given I am on the RottenPotatoes home page
+    Then I should see "Search TMDb for a movie"
+
+Scenario: Try to add nonexistent movie (sad path)
+
+    When I fill in "Search Terms" with "Movie That Does Not Exist"
+    And I press "Search TMDb"
+    Then I should be on the RottenPotatoes home page
+    And I should see "'Movie That Does Not Exist' was not found in TMDb."
+
+Scenario: Try to add existing movie (happy path)
+
+    When I fill in "Search Terms" with "Inception"
+    And I press "Search TMDb"
+    Then I should be on the "Search Results" page
+    And I should not see "not found"
+    And I should see "Inception"
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <h4>
+                                        Do
+                                    </h4>
+                                    <pre>
+                                        <code>
+Feature: movies should appear in alphabetical order, not added order
+
+Scenario: view movie list after adding movie (declarative and DRY)
+
+    Given I have added "Zorro" with rating "PG-13"
+    And   I have added "Apocalypse Now" with rating "R"
+    Then  I should see "Apocalypse Now" before "Zorro" on the RottenPotatoes home page sorted by title
+                                        </code>
+                                    </pre>
+                                </div>
+                                <div class="col">
+                                    <h4>
+                                        Don't
+                                    </h4>
+                                    <pre>
+                                        <code>
+Feature: movies should appear in alphabetical order, not added order
+
+Scenario: view movie list after adding 2 movies (imperative and non-DRY)
+
+    Given I am on the RottenPotatoes home page
+    When I follow "Add new movie"
+    Then I should be on the Create New Movie page
+    When I fill in "Title" with "Zorro"
+    And I select "PG" from "Rating"
+    And I press "Save Changes"
+    Then I should be on the RottenPotatoes home page
+    When I follow "Add new movie"
+    Then I should be on the Create New Movie page
+    When I fill in "Title" with "Apocalypse Now"
+    And I select "R" from "Rating"
+    And I press "Save Changes"
+    Then I should be on the RottenPotatoes home page
+    Then I should see "Apocalypse Now" before "Zorro" on the RottenPotatoes home page sorted by title
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
